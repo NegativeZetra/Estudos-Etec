@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            $.ajax({  
+            url: "admin.php", 
+           }).done(function(resposta) {
+               $("div").html(resposta);
+           })
+         })	
+   </script>   
+</head>
+<body>
+    <a href="index.html"><button>Voltar para Página de Login</button></a>
+    <P>
+        Tela de Administrador
+    </P>
+    <div></div>
+</body>
+</html>

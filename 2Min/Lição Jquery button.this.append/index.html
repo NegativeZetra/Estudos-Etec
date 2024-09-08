@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova lição - Append</title>
+    <script src="jquery.js"></script>
+    <script>
+       $(document).ready(function(){
+            $(document).on("click",".red", function(){
+                $(this).parent().css("color", "red");
+            });
+            $(document).on("click",".green", function(){
+                $(this).parent().css("color", "green");
+            });
+            $(document).on("click",".blue", function(){
+                $(this).parent().css("color", "blue");
+            });
+            $(document).on("click",".mais", function(){
+                $(this).parent().css({"font-size": "+=10%"});
+            });
+            $(document).on("click",".menos", function(){
+                $(this).parent().css({"font-size": "-=10%"});
+            });
+            $(".exibir").click(function (){
+                var texto = $(".texto").val();
+                var red = "<button class='red'>vermelho</button>";
+                var green = "<button class='green'>verde</button>";
+                var blue = "<button class='blue'>azul</button>";
+                var bu = "<button class='mais'>mais</button>";
+                var menos = "<button class='menos'>menos</button>";
+                $(".texto3").append("<div> " + "<p>" + texto + "</p>"+red+" "+green+" "+blue+" "+bu+" "+menos+"</div>");
+                $("p").val("");
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <input class="texto">
+    <button class="exibir">Exibir</button>
+  <div class="texto3"></div>
+
+    <button class="red">red</button>
+    <button class="green">green</button>
+    <button class="blue">blue</button>
+    <button class="mais">+</button>
+    <button class="menos">-</button>
+</body>
+</html>
+<!-- Coloquem cada texto que forem escrevendo em um paragrafo diferente-->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            $.ajax({  
+            url: "user.php", 
+           }).done(function(resposta) {
+               $("div").html(resposta);
+           })
+         })	
+   </script>    
+</head>
+<body>
+    <a href="index.html"><button>Voltar para Página de Login</button></a>
+    <h1> Tela de Usuário Comum </h1>
+    <div></div>
+</body>
+</html>

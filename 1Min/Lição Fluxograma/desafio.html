@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior numero</title>
+    <script src="jquery.js"></script>
+    <script>
+        var n1
+        var n2
+        var n3
+        var resp
+
+        $(document).ready(function(){
+            $(".calcular").click(function(){
+                var resultado = $("#result").val();
+                n1 = parseInt(resultado);
+                var resultado2 = $("#result2").val();
+                n2 = parseInt(resultado2);
+                var resultado2 = $("#result3").val();
+                n3 = parseInt(resultado2);
+                if(n1>n3<n2){
+                    $("section").text("O primeiro numero é maior, o terceiro numero é o do meio, e o segundo é o menor.")
+                }else if(n2>n3<n1){
+                    $("section").text("O segundo numero é o maior, o terceiro é o do meio, e o primeiro é o menor.")
+                }else if(n3>n1<n2){
+                    $("section").text("O terceiro numero é o maior, o primeiro é o do meio, e o segundo é o menor.")
+                }else if(n1>n2<n3){
+                    $("section").text("O primeiro numero é maior, o segundo é do meio, e o terceiro é o menor.")
+                }else{
+                    $("section").text("Todos são iguais.")
+                }
+        });
+            });
+    </script>
+</head>
+<body>
+    <div class="button">
+        <input type="text" id="result" placeholder="Insira o primeiro numero">
+        <input type="text" id="result2" placeholder="Insira o segundo numero">
+        <input type="text" id="result3" placeholder="Insira o terceiro numero">
+        <div class="calcular">
+        <button> Calcular </button> </div>
+        <section></section>
+</body>
+</html>

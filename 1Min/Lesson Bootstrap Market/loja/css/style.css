@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&family=Poppins:wght@600&display=swap');
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+.visible-scrollbar {
+  display: block;
+  width: max-content;
+  overflow: auto;
+  height: 100%;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,260 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+} /* Setando o tamanho da caixa (box sizing) para border box em todos os elementos. */
+
+:root /* Root é como se fosse uma pseudoclasse tendo mais autoridade que o html*/ {
+    --rgb: black;
+}
+
+body {
+    overflow-x: hidden; /* Esconde a scrollbar horizontal */
+    cursor: url(../Source/Mouse-Cursor.png), auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items:center; /* essa parte serve para colocar tudo no centro.*/
+    background-color: #0e0d0e;
+}
+
+.flag {
+    width: 20px; /* Ajuste conforme necessário */
+    margin-right: 5px; /* Espaçamento entre a bandeira e o texto */
+    position: relative;
+  }
+.aviso {
+    position: absolute;
+    top: 40px;
+    left: 450px;
+  }
+  
+  .icone-aviso{
+    margin-left: 0px;
+  }
+  
+  .tooltip {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  
+  .icone-aviso:hover + .tooltip {
+    display: block;
+  }
+
+#language-selector {
+    background: url('Source/arrow.png') no-repeat right center;
+    background-size: 20px; /* Ajuste conforme necessário */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #333;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+}
+
+#retry-message {
+    font-size: 50px;
+    text-align: center;
+    animation: blink 0.75s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.controle-volume {
+    position: absolute;
+}
+
+.supremo-img {
+    position: absolute;
+    top: 15%; /* Posiciona a imagem no meio da tela verticalmente */
+    left: 50%; /* Posiciona a imagem no meio da tela horizontalmente */
+    transform: translate(-50%, -50%) rotate(25deg); /* Translada a imagem para o centro e a rotaciona 25 graus */
+}
+
+.supremo-img:hover {
+    box-shadow: 0 0 15px #ac3232;
+}
+
+.menu-body{
+    justify-content: center;
+    align-items: absolute;
+    height: max-content;
+    width: max-content;
+    margin: 0px 100px;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    border: 10px solid white;
+}
+
+
+.menu-head{
+    background: url(../Source/);
+}
+
+
+body.correct, body.wrong {
+    transition: background-color 0.5s ease;
+}
+
+body.correct{
+    background-color: rgb(141, 38, 220);
+}
+
+body.wrong{
+    background-color: rgb(223, 34, 34);
+}
+
+.hide-border {
+    border: none;
+}
+
+
+.container {
+    width: max-content;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.btn-grid{
+    display: grid; /*Isso faz com que as questões fiquem uma em cima da outra*/
+    grid-template-columns: repeat(2, auto);
+    gap: 10px; /* Serve para separar um pouco as colunas.*/
+    margin: 20px 0;
+}
+.btn {
+    width: 100%; /* Altere para 100% */
+    max-width: 300px; /* Adicione esta linha para limitar a largura máxima se necessário */
+    background-color: transparent;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#google_translate_element {
+    display: none;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-banner-frame-.skiptranslate, .goog-te-gadget-simple img {
+    display: none !important;
+}
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.goog-text, .h2 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+p, h2, #question {
+    font-size: 50px;
+    font-family: 'Pixelify Sans', cursive;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+h2 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(221, 51, 136);
+    opacity: .5;
+}
+
+.btn.correct {
+    background-color: rgb(182, 131, 215)
+}
+
+.btn.wrong {
+    background-color: rgb(99, 3, 112)
+}
+
+.start-btn .retry-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+#end-game-message{
+    animation: text .2s ease-in-out infinite
+}
+#retry-btn{
+    animation: text .2s ease-in-out infinite
+}
+@keyframes text{
+    0%{
+        opacity: 100;
+        animation-delay: 4s;
+    }
+    100%{
+        opacity: 0;
+        animation-delay: 2s;
+    }
+}
+.controle-volume{
+    position: relative;
+}
+
+#options-container{
+    justify-content: center;
+    align-items: absolute;
+    width: 200px; /* Ajuste conforme necessário */
+    margin-left: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}

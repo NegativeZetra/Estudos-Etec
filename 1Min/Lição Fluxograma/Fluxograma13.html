@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucessor</title>
+    <script src="../Lição - Fluxogramas em Codigo/js/jquery.js"></script>
+    <script>
+        var n1
+        var n2
+
+        $(document).ready(function(){
+            $(".calcular").click(function(){
+                var resultado = $("#result").val();
+                n1 = parseInt(resultado);
+                resp = n1+1;
+                alert ("O sucessor de "+ n1+ " é " + resp)
+                $("div").text (texto)
+                $("#texto").val ("");
+        });
+            });
+    </script>
+</head>
+<body>
+    <div class="button">
+        <input type="text" id="result" placeholder="Insira um numero">
+        <div class="calcular">
+        <button> calcular </button> </div>
+</body>
+</html>

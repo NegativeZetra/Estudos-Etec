@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Acrescimo</title>
+    <script src="../Lição - Fluxogramas em Codigo/js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.somar').click(function() {
+                var n1 = parseInt($('#result').val());
+                var total = parseInt($('#totalClicks').val());
+                var resultado = total + n1;
+                $('#totalClicks').val(resultado);
+            });
+        });
+        $(document).ready(function() {
+            $('.subtrair').click(function() {
+                var n1 = parseInt($('#result').val());
+                var total = parseInt($('#totalClicks').val());
+                var resultado = total - n1;
+                $('#totalClicks').val(resultado);
+            });
+        });
+        $(document).ready(function() {
+            $('.multiplicar').click(function() {
+                var n1 = parseInt($('#result').val());
+                var total = parseInt($('#totalClicks').val());
+                var resultado = total * n1;
+                $('#totalClicks').val(resultado);
+            });
+        });
+        $(document).ready(function() {
+            $('.dividir').click(function() {
+                var n1 = parseInt($('#result').val());
+                var total = parseInt($('#totalClicks').val());
+                var resultado = total / n1;
+                $('#totalClicks').val(resultado);
+            });
+        });
+        $(document).ready(function() {
+            $('.Limpar').click(function() {
+                var n1 = parseInt($('#result').val());
+                var total = parseInt($('#totalClicks').val());
+                var resultado = 0;
+                $('#totalClicks').val(resultado);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="result" placeholder="Insira um número">
+    <input id="totalClicks" value="0" readonly="">
+    
+    <div class="button">
+       <div class="somar"> <button>+</button> </div>
+       <div class="subtrair"> <button>-</button> </div>
+       <div class="multiplicar"> <button>x</button> </div>
+       <div class="dividir"> <button>/</button> </div>
+        <div class="Limpar"><button> Limpar</button> </div>
+    </div>
+</body>
+</html>
+
+</html>

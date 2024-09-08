@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <script src="jquery.js"></script>
+    <script>
+        var n1
+        var n2
+        var n3
+        var n4
+        var resp
+
+        $(document).ready(function(){
+            $(".calcular").click(function(){
+                var resultado = $("#result").val();
+                n1 = parseInt(resultado);
+                var resultado2 = $("#result2").val();
+                n2 = parseInt(resultado2);
+                var resultado = $("#result3").val();
+                n3 = parseInt(resultado);
+                var resultado2 = $("#result4").val();
+                n4 = parseInt(resultado2);
+                resp = (n1+n2+n3+n4)/4;
+                if(resp>=7){
+                    $("section").text("Você foi aprovado")
+                }else{
+                    $("section").text("Você foi reprovado")
+                }
+        });
+            });
+    </script>
+</head>
+<body>
+    <div class="button">
+        <input type="text" id="result" placeholder="Insira a primeira nota">
+        <input type="text" id="result2" placeholder="Insira a segunda nota">
+        <input type="text" id="result3" placeholder="Insira a terceira nota">
+        <input type="text" id="result4" placeholder="Insira a quarta nota">
+        <div class="calcular">
+        <button> Calcular </button> </div>
+        <section></section>
+</body>
+</html>

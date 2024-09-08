@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <script src="../Lição - Fluxogramas em Codigo/js/jquery.js"></script>
+    <script> 
+    $(document) .ready (function () {
+        var vezes1
+        var vezes2
+        var vezes3
+        var vezes4
+        var vezes5
+        var vezes6
+        var vezes7
+        var vezes8
+        var vezes9
+        var vezes10
+        $(".calcular") .click (function () {
+            n1 = parseInt ($("#result") .val() )
+            vezes1 = n1 * 1
+            vezes2 = n1 * 2
+            vezes3 = n1 * 3
+            vezes4 = n1 * 4
+            vezes5 = n1 * 5
+            vezes6 = n1 * 6
+            vezes7 = n1 * 7
+            vezes8 = n1 * 8
+            vezes9 = n1 * 9
+            vezes10 = n1 * 10
+            alert   (n1+ " * 1 = " +vezes1+  " "
+                        +n1+ " * 2 = " +vezes2+ " "
+                        +n1+ " * 3 = " +vezes3+ " "
+                        +n1+ " * 4 = " +vezes4+ " "
+                        +n1+ " * 5 = " +vezes5+ " "
+                        +n1+ " * 6 = " +vezes6+ " "
+                        +n1+ " * 7 = " +vezes7+ " "
+                        +n1+ " * 8 = " +vezes8+ " "
+                        +n1+ " * 9 = " +vezes9+ " "
+                        +n1+ " * 10 = " +vezes10+ " ") 
+
+
+            
+        })
+    })
+</script>
+</head>
+<body>
+    <div class="button">
+        <input type="text" id="result" placeholder="Insira um numero">
+        <div class="calcular">
+        <button> calcular </button> </div>
+</body>
+</html>

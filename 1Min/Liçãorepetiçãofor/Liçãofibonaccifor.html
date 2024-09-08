@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+            var r
+            var n1 = 0;
+            var n2 = 1;
+            var vf;
+            var b= " "
+            $(document).ready(function(){
+            $("button").click(function(){
+            vf = parseInt($(".texto").val());
+            for(i=1; i<=vf ; i++){
+            r = n2
+            n2 = n1+n2
+        
+        $("div").html(b+=n2+"<br/>")
+            n1 = r
+            }
+            });
+        });
+        //$(document).ready(function(){
+        //$("button").click(function(){
+           // i = parseInt($(".texto").val());
+           // for(i=1; i<=10; i++){
+              //  i+=i*vf+"</br>";
+        
+           // }
+          //  $("div").html(i) 
+       // });
+   // });
+    </script>
+</head>
+<body>
+    <input type="text" class="texto">
+    <button>Pressionar</button>
+    <div></div>
+</body>
+</html>

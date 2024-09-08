@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoo Plush - Home</title>
+	<link rel="icon" href="img.png">
+  <link rel="icon" href="source/logowbg.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <script type="text/javascript">
+    function startTime()
+    {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    // adicione um zero na frente de números<10
+    m=checkTime(m);
+    s=checkTime(s);
+    document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+    t=setTimeout('startTime()',500);
+    }
+    function checkTime(i)
+    {
+    if (i<10)
+    {
+    i="0" + i;
+    }
+    return i;
+    }
+    </script>
+    </head>
+
+</head>
+<body onload="startTime()">
+    <!-- Carousel Codigo -->
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="source/cupomraul2.png" style="background-color: #0c19a6; font-size: 20px; color: white; box-shadow: 120px 80px 40px 20px; border: 1px solid #0c19a6;" width="200px" height="50px">
+        </div>
+      <div class="carousel-item">
+        <img src="source/cupomex.png" style="background-color: #dc8112;" class="d-block w-100" width="200px" height="50px">
+      </div>
+      <div class="carousel-item">
+        <img src="source/cupomex.png" style="background-color: #532894;" class="d-block w-100" width="200px" height="50px">
+      </div>
+      <div class="carousel-item">
+        <img src="source/compjapng.png" style="background-color: #b71717;" class="d-block w-100" width="200px" height="50px">
+      </div>
+      <div class="carousel-item">
+        <img src="source/cupomraul2.png" style="background-color: #339428;" class="d-block w-100" width="200px" height="50px">
+      </div>
+    </div>
+  </div>
+  <!-- Carousel Codigo -->
+
+
+<nav class="navbar" style="background-color: #e3f2fd; ">
+  <div class="btn-group">
+    <a class="navbar-brand" href="index.html">
+      <img src="source/logowbg.png" alt="Logo" width="60" height="48" class="d-inline-block align-text">
+      Zoo Plush
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+  </div>
+    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+    <a href="menus/produto.html" class="nav-link">Produtos</a>
+    <a href="menus/orcamento.html" class="nav-link">Orçamento</a>
+    <a href="menus/contato.html" class="nav-link">Contato</a>
+    <a href="menus/sobre.html" class="nav-link">Sobre</a>
+  </div>
+  </div>
+  <form class="d-flex" role="search">
+    <input class="form-control" type="search" placeholder="Procurar" aria-label="Search">
+    <button class="btn btn-outline-primary" type="submit">Search</button>
+  </form>
+  <i class="fa-regular fa-clock" style="width: 50px; height: 20px;"></i>
+  <div id="txt" style="font-family: 'Poppins', sans-serif;"></div>
+</div>
+<div class="idi">
+  <div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"wrapper_selector":".gtranslate_wrapper","flag_style":"3d","alt_flags":{"pt":"brazil"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+</div>
+  <br>
+  </nav>
+  </div>
+  <!-- Container Dos Produtos -->
+  <div id="container">
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-4" style="margin-top: 20px;">
+        <!-- Navbar dos Filtros -->
+        <div class="visible-scrollbar text-start row-cols-1" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+          <p>Filtros</p><hr>
+          <p>Categorias</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+              <label class="form-check-label" for="firstRadio">Pelucias No Geral</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+              <label class="form-check-label" for="secondRadio">Pelucias de Cachorro</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio">Pelucias de Jacare</label>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar dos Filtros -->
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia de Pássaro</h5>
+              <h6 class="card-text">$59,99 <h8 style="color:red;">-20%</h8> <br><h7 style="color:green;">Frete Gratis</h7></h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia de Tigre</h5>
+              <h6 class="card-text">$159,67 <h8 style="color:red;">-15%</h8> <br><h7 style="color:green;">Frete Gratis</h7></h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto3.jpg" class="card-img-top" alt="..." style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia de Macaco</h5>
+              <h6 class="card-text">$27,99 </h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="visible-scrollbar text-start row-cols-1" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+          <p>Tamanho</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+              <label class="form-check-label" for="firstRadio">Tamanho: 15 cm   |</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+              <label class="form-check-label" for="secondRadio">Tamanho: 30 cm  |</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio">Tamanho: 60 cm   |</label>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto4.jpg" class="card-img-top" alt="..." style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia de Jacare</h5>
+              <h6 class="card-text">$69,99 </h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto5.jpg" class="card-img-top" alt="..." style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia da Crush do Moto Moto</h5>
+              <h6 class="card-text">$799,99 </h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto6.jpg" class="card-img-top" alt="..." style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia da Crush do Chicken Little</h5>
+              <h6 class="card-text">-$3,00 </h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="visible-scrollbar text-start row-cols-1" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+          <p>Cor</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+              <label class="form-check-label" for="firstRadio">Pelucias Amarelas</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+              <label class="form-check-label" for="secondRadio">Pelucias Azuis</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+              <label class="form-check-label " for="thirdRadio">Pelucias Marroms</label>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto7.jpg" class="card-img-top" alt="..." style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia de um gato que gosta de lasanha</h5>
+              <h6 class="card-text">$199,99 </h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto8.png" class="card-img-top" alt="..." style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia do Bob Esponja</h5>
+              <h6 class="card-text">$209,76 </h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg-dark mb-4" style="width: 18rem;">
+            <img src="source/produto9.webp" class="card-img-top" alt="..." style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Pelucia de Tardigrado</h5>
+              <h6 class="card-text">$10,00 </h6>
+              <i class="fa-regular fa-heart" href="#"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="spinner-grow" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+  <!-- Container Dos Produtos -->
+
+<!-- ##Testo isso depois##
+<div id="map"></div>
+
+<script>
+  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+    key: "YOUR_API_KEY_HERE",
+    // Add other bootstrap parameters as needed, using camel case.
+    // Use the 'v' parameter to indicate the version to load (alpha, beta, weekly, etc.)
+  });
+</script>
+-->
+</body>
+</html>

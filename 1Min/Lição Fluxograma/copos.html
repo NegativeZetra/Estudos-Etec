@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior numero</title>
+    <script src="jquery.js"></script>
+    <script>
+        var A = B;
+        var B = C;
+        var C = A;
+        var resp
+
+        $(document).ready(function(){
+            $(".calcular").click(function(){
+                var resultado = $("#result").val();
+                A = (resultado);
+                var resultado2 = $("#result2").val();
+                B = (resultado2);
+                var resultado3 = $("#result3").val();
+                C = (resultado3);
+                {
+                    $("section").text("O valor de A trocado é "+ B+ " ,o valor de B trocado é "+ C+" ,o valor de C trocado é "+ A)
+                }
+                
+        });
+            });
+    </script>
+</head>
+<body>
+    <div class="button">
+        <input type="text" id="result" placeholder="Insira o valor A">
+        <input type="text" id="result2" placeholder="Insira o valor B">
+        <input type="text" id="result3" placeholder="Insira o valor C">
+        <div class="calcular">
+        <button> Calcular </button> </div>
+        <section></section>
+</body>
+</html>

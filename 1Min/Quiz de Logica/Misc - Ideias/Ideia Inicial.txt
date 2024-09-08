@@ -1,0 +1,41 @@
+Ideia:
+	Jogo em Html, Javascript e css de logica de programação em pixel art interativo.
+
+
+
+
+
+
+
+
+
+
+Miscelania:
+
+Um quiz de matemática lógica pode resolver uma série de problemas e desafios que envolvem raciocínio lógico e habilidades matemáticas. Aqui estão alguns exemplos de problemas que um quiz de matemática lógica poderia abordar:
+
+Raciocínio Dedutivo: Perguntas que exigem dedução lógica a partir de informações dadas. Por exemplo, inferir o valor de uma variável em uma equação com base em outras equações relacionadas.
+
+Quebra-Cabeças Lógicos: Desafios que envolvem encaixar peças, números ou símbolos em uma grade ou padrão de acordo com regras lógicas.
+
+Sequências Numéricas e de Símbolos: Questões que envolvem identificar padrões em sequências de números, letras ou símbolos, e determinar o próximo item na sequência.
+
+Lógica de Proposições: Problemas que usam proposições lógicas (verdadeiro/falso) para criar declarações condicionais e tirar conclusões lógicas com base nessas declarações.
+
+Quebra de Códigos: Desafios que requerem decifrar códigos numéricos ou simbólicos com base em regras de substituição ou transformação.
+
+Problemas de Verdadeiro/Falso: Perguntas em que os participantes determinam se as afirmações dadas são verdadeiras ou falsas com base em regras matemáticas ou lógicas.
+
+Lógica Binária: Perguntas que exploram conceitos de lógica binária, como portas lógicas, circuitos e operações bit a bit.
+
+Problemas de Enigmas: Desafios que apresentam pistas, informações parciais ou condições restritivas, e os participantes precisam deduzir informações ou resolver o problema com base nessas pistas.
+
+Lógica Modal: Questões que envolvem raciocínio modal, lidando com possibilidade, necessidade e contingência.
+
+Problemas de Conjuntos e Diagramas de Venn: Desafios que requerem a organização de informações em diagramas de Venn ou o uso de operações de conjuntos para resolver problemas.
+
+Lógica Matemática Formal: Problemas que envolvem o uso de regras de lógica matemática formal, como prova de teoremas, leis de inferência, etc.
+
+Paradoxos e Desafios Contraintuitivos: Questões que apresentam situações paradoxais ou problemas que desafiam a intuição lógica.
+
+Um quiz de matemática lógica pode ser uma ótima maneira de desenvolver habilidades de pensamento crítico, resolução de problemas e raciocínio lógico, enquanto também oferece uma experiência educativa e divertida.

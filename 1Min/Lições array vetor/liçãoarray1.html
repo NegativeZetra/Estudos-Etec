@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <script>        
+        var c = [];
+        var c2 = [];
+        var c3 = [];
+        var i
+        var v = 0;
+        var v2 = 0;
+        var v3 = 0;
+        var d
+        var b = " "
+        $(document).ready(function(){
+            $(".button").click(function(){
+            d = parseInt($("input").val());
+            c [v] = d
+            v++
+            if( d/2 == 0){
+                c2 [v2] = d
+                v2++
+            }
+            else{
+                c3 [v3] = d
+                v3++
+            }
+            $("input").val(" ")
+
+    });
+    $(".button1").click(function(){
+        b=" "
+        for(i=0;i<c.length;i++){
+            b+="<li>"+c[i]+"</li>"
+        $(".show").html(b);
+        }
+       
+
+    });
+    $(".button2").click(function(){
+        b=" "
+        for(i=0;i<c2.length;i++){
+            b+="<li>"+c2[i]+"</li>"
+        $(".show").html(b);
+                }
+    });
+    $(".button3").click(function(){
+                    b=" "
+        for(i=0;i<c3.length;i++){
+            b+="<li>"+c3[i]+"</li>"
+        $(".show").html(b);
+    }
+    });
+});
+  //  c++
+   // if
+   // else
+   // v[0]
+   // v.lenght
+   // v.push(5);
+    </script>
+
+    <title>Formulario Com Vetor</title>
+</head>
+<body>
+  <div id="form">
+   <center>
+        <div ><input type="text" name="numero" placeholder="Digite um numero" required="" > </div>
+        <button class="button"> Adicionar </button>
+        <button class="button1"> Todos </button>
+        <button class="button2"> Impares </button>
+        <button class="button3"> Pares </button>
+
+        <div class="show"></div>
+
+
+  </div>
+</center>    
+</body>
+</html>

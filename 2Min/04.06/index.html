@@ -1,0 +1,31 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <script src="jquery-3.6.4.min.js"></script>
+ 	<script>
+		$(document).ready(function(){
+		$("#enviar").click(function(){
+		var login =  $("#usuario").val();
+		var senha =  $("#senha").val();
+					$.ajax({  
+			   		url: "valid.php", 
+			   		type: "POST", 
+			   		data: "logindigit="+login+"&senhadigit="+senha,
+			}).done(function(resposta) {
+			    $("body").html(resposta);
+			})
+          })	
+		})
+	</script>
+</head>
+<body>
+    <form>
+        <input type="text" id="usuario" placeholder="Insira o nome de usuário">
+        <input type="text" id="senha" placeholder="Insira sua senha">
+        <button type="button" id="enviar">Logar</button>
+        <div></div>
+    </form>
+</body>
+</html>

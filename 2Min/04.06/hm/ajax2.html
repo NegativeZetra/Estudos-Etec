@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+ 	<script>
+		$(document).ready(function(){
+		$("button").click(function(){
+		var n1 =  $("#n1").val();
+		var n2 =  $("#n2").val();
+		var n3 =  $("#n2").val();
+					$.ajax({
+			   		url: "ajax2.php",
+			   		type: "POST",
+			   		data: "n1="+n1+"&n2="+n2+"&n3="+n3,
+			    	dataType: "html"
+			}).done(function(resposta) {
+			    $("div").html(resposta);
+			}).always(function() {
+			    console.log("Foi");
+			}).fail(function(jqXHR, textStatus ) {
+			    console.log("Request failed: " + textStatus);
+          });
+          })
+		})
+	</script>
+</head>
+<body>
+	<label>Nome:</label><input placeholder="Insira seu nome" id="n1">
+	<label>Senha:</label><input placeholder="Insira sua senha" id="n2">
+	<label>Verificação:</label><input placeholder="Insira seu dado" id="n3">
+    <button>Logar</button>
+    <div></div>
+</body>
+</html>

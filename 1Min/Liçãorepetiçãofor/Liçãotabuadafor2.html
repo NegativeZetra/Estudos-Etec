@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+            var i
+            var vf
+            var b = " ";
+            $(document).ready(function(){
+            $("button").click(function(){
+            for(var i=1; i<=10 ; i++){
+
+            for(var vf=1; vf<=10 ; vf++){
+            b+= vf+" x "+i+"="+vf*i;
+        $("div").html(b+" <br />") 
+            }
+        }
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Pressionar</button>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="imagex/png" href="gameicon.ico">
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="js/script.js"></script>
+    <script src="js/game.js " defer type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.js" integrity="sha512-7Zgn4mmO9yGGB1j9yP0mZvUPWBVg0fCcUMsYUV6FX7XIKQfb/dhGxsKh794YAzXH2F/+Z3eJL4mrTilrT2ZeFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Quiz SUPREMO de Logica - matematica</title>
+</head>
+<body>
+    <audio id="sound1" src="Sound Effects/Shutter.wav"></audio>
+    <audio id="sound2" src="sound2.mp3"></audio>
+    <audio id="sound3" src="sound3.mp3"></audio>
+    <p id="timer" style="text-align: top; position: absolute; margin-bottom: 600px; "></p>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question"></div> <!-- Nome da questão que irá ser pego pelo script-->
+            <div id="answer-buttons" class="btn-grid">
+                <img src="" data-sound="sound1" class="btn" id="choice0" style="width: 400px; ">
+                <img src="" data-sound="sound1" class="btn" id="choice1" style="width: 400px; ">
+                <img src="" data-sound="sound1" class="btn" id="choice2" style="width: 400px; ">
+                <img src="" data-sound="sound1" class="btn" id="choice3" style="width: 400px; "> <!-- Botões das perguntas-->
+                <div id="game" class="hide"></div>
+            </div>
+        </div> <!-- adicionou a class "hide" para demarcar que a pergunta é escondida por padrão-->
+        <p id="options-msg" class="options-msg hide" style="margin: 0 400px;"> Opções</p>
+        <div class="controls">
+            <div class="menu-container">
+                <div id="data-hora" class="h2"></div>
+                <div class="tr"id="google_translate_element" class="boxTradutor"></div>
+                <div class="container-flag">
+                <div class="flags" id="flags">
+                <a href="javascript:trocarIdioma('pt')"><img alt="portugues" src="Source/brazilflagpx.png" style="width: 30px;"></a>
+                <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="Source/spainflagpx.png" style="width: 30px;"></a>
+                <div class="aviso">
+                    <img src="Source/warningsprite.png" alt="Ícone de Aviso" class="icone-aviso">
+                    <div class="tooltip">Esta é uma função experimental. Usar ela pode resultar em bugs ou comportamentos indesejados. Se desejar prosseguir, basta ignorar esta mensagem.</div>
+                  </div>
+                <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="Source/usaflagpx.png" style="width: 30px;"></a>
+                </div>
+            </div>         
+                <div class="menu-head">
+                    <img id="supremo-img" class="supremo-img img" src="Source/supremo-menu2.png" style="width:270px;     margin: 0px 100px;">
+                    <img id="sherloduck-img" class="sherloduck-img img hide" src="Source/sherloduck.gif" style="width:400px;     margin: 0px 100px;">
+                </div>
+                <div class="menu-body">
+                <img id="start-btn" data-sound="sound1" class="start-btn btn" src="Source/iniciarimg.png">
+                <img id="options-btn" data-sound="sound1" class="options-btn btn" src="Source/optionsimg.png">
+                <div id="options-container">
+                    <img id="back-btn" data-sound="sound1" src="Source/backbtn.png" class="back-btn btn hide" style="width: 150px; margin-bottom: 100px;">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="display: flex; justify-content: center; align-items: center;"><img id="trophygif" class="hide" src="Source/Trophygif.gif" style="width: 100px; box-shadow: 0 0 30px yellow; "></a>
+                    <img id="colorwheel" class="hide" src="Source/pixelart-wheel.png" style="width: 30px;">
+                    <input type="color" id="backcolor" class="backcolor hide" onchange="alterarCor()">
+                    <div class="controle-volume">
+                        <p id="slidertxt" class="hide" style="font-size: 20px;">Volume:</p>
+                        <input type="range" id="volumeSlider" class="hide" min="0" max="1" value="0" step="0.1" onchange="showValue(this.value)" oninput="showValue(this.value)">
+                        <p id="range" class="hide" style="font-size: 20px;">0</p>
+                </div>
+                </div>
+            </div>
+                <button id="retry-btn" data-sound="sound1" class="retry-btn btn hide"> Aperte R para tentar novamente</button>
+                <p id="retry-message" class="hide">Aperte R para tentar novamente</p>
+                <p id="end-game-message" class="hide" style="font-size: 15px;" >Parabens por ter completado o jogo! Clique no premio</p>
+            </div>
+        </div>
+    </div>
+    <h2 class="copymeme" id="copymeme"> Indev 0.0.1 Direitos Reservados a Rolinha</h2>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Aritmeticas</title>
+    <script src="../Lição - Fluxogramas em Codigo/js/jquery.js"></script>
+    <script>
+        var n1
+        var n2
+
+        $(document).ready(function(){
+            $(".Somar").click(function(){
+                var resultado = $("#result").val();
+                n1 = parseInt(resultado);
+                var resultado2 = $("#result2").val();
+                n2 = parseInt(resultado2);
+                resp = n1+n2;
+                alert ("Soma Da sua conta: " + resp)
+                $("div").text (texto)
+                $("#texto").val ("");
+        });
+            });
+            $(document).ready(function(){
+            $(".Subtrair").click(function(){
+                var resultado = $("#result").val();
+                n1 = parseInt(resultado);
+                var resultado2 = $("#result2").val();
+                n2 = parseInt(resultado2);
+                resp = n1-n2
+                alert ("Subtração da sua conta: "+resp)
+                $("div").text (texto)
+                $("#texto").val ("");
+        });
+            });
+            $(document).ready(function(){
+            $(".Dividir").click(function(){
+                var resultado = $("#result").val();
+                n1 = parseInt(resultado);
+                var resultado2 = $("#result2").val();
+                n2 = parseInt(resultado2);
+                resp = n1/n2
+                alert ("Divisão da sua conta: "+resp)
+                $("div").text (texto)
+                $("#texto").val ("");
+        });
+            });
+            $(document).ready(function(){
+            $(".Multiplicar").click(function(){
+                var resultado = $("#result").val();
+                n1 = parseInt(resultado);
+                var resultado2 = $("#result2").val();
+                n2 = parseInt(resultado2);
+                resp = n1*n2
+                alert ("Multiplicação da sua conta: " +resp)
+                $("div").text (texto)
+                $("#texto").val ("");
+        });
+            });
+    </script>
+</head>
+<body>
+    <div class="button">
+        <input type="text" id="result" placeholder="Insira Um numero">
+        <input type="text" id="result2" placeholder="Insira Outro Numero">
+        <div class="Somar">
+        <button> Somar </button> </div> <div class="Subtrair">
+        <button> Subtrair</button> </div> <div class="Dividir">
+        <button> Dividir</button> </div> <div class="Multiplicar">
+        <button> Multiplicar</button> </div>
+        </div>
+</body>
+</html>

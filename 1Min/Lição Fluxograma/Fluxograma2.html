@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome e Idade</title>
+    <script src="../Lição - Fluxogramas em Codigo/js/jquery.js"></script>
+    <script>
+        var nome
+        var data
+
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var resultado = $("#result").val();
+                nome = (resultado);
+                var resultado2 = $("#result2").val();
+                data = 2023-resultado2;
+                alert ("Seu nome é "+ nome + "," + " e sua idade é " + data +".")
+                $("div").text (texto)
+                $("#texto").val ("");
+        });
+            });
+    </script>
+</head>
+<body>
+    <input type="text" id="result" placeholder="Insira seu nome">
+    <input type="text" id="result2" placeholder="Insira seu ano de nascimento">
+    <div class="button">
+        <button> Enviar</button>
+    </div>
+
+</body>
+</html>
